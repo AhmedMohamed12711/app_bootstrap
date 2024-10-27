@@ -60,7 +60,7 @@
                 </div>
             </div>
         </nav>
-        <div class="text-header vh-100 w-100 d-flex flex-column justify-content-center align-items-center text-white">
+        <div class="text-header text-center vh-100 w-100 d-flex flex-column justify-content-center align-items-center text-white">
             <h1 class="mb-2">I am Morgan Freeman</h1>
             <p><span id="element" class="fs-1"></span></p>
         </div>
@@ -71,53 +71,61 @@
     <!--!start about -->
     <section id="about" class="py-5">
         <div class="container">
-            <div class="row bg-light shadow-lg py-5">
-                <div class="col-md-6">
-                    <div class="head-about d-flex justify-content-around ">
-                        <div class="img_about mt-3">
-                            <img src="./images/testimonial-2.jpg" alt="" class="w-100 rounded-3">
+            <div class="row bg-light shadow-lg p-5">
+                <!-- First Column for Image and Details -->
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="head-about d-flex flex-column flex-md-row justify-content-between">
+                        <div class="img_about mt-3 col-12 col-md-4 mb-3">
+                            <img src="./images/testimonial-2.jpg" alt="" class="w-100 d-block rounded-3">
                         </div>
-                        <div class="detail-img ">
+                        <div class="detail-img">
                             <ul>
-                                <li class="font_img fw-bolder">Name:<span class="  fw-lighter ps-1">Morgan Freeman</span></li>
+                                <li class="font_img fw-bolder">Name: <span class="fw-lighter ps-1">Morgan Freeman</span></li>
                             </ul>
                             <ul>
-                                <li class="font_img fw-bolder">Profile: <span class="  fw-lighter ps-1">full stack developer</span></li>
+                                <li class="font_img fw-bolder">Profile: <span class="fw-lighter ps-1">Full Stack Developer</span></li>
                             </ul>
                             <ul>
-                                <li class="font_img fw-bolder">Email:<span class="  fw-lighter ps-1">contact@example.com</span></li>
+                                <li class="font_img fw-bolder">Email: <span class="fw-lighter ps-1">contact@example.com</span></li>
                             </ul>
                             <ul>
-                                <li class="font_img fw-bolder">Phone:<span class="  fw-lighter  ps-1">(617) 557-0089</span></li>
+                                <li class="font_img fw-bolder">Phone: <span class="fw-lighter ps-1">(617) 557-0089</span></li>
                             </ul>
                         </div>
-                    </div>   
-                    <div class="dtails_about ms-5">
-                            <p class="text-capitalize fw-bolder fs-5 mb-3">skills</p>
-
-                            <span class="text-uppercase text-muted">Html 85%</span>
-                            <div class="progress mt-2 rounded-0 mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
-                            <span class="text-uppercase text-muted ">CSS3 75%</span>
-                            <div class="progress mt-2 rounded-0 mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
-                            <span class="text-uppercase text-muted ">PHP 50%</span>
-                            <div class="progress mt-2 rounded-0 mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 50%"></div>
-                            </div>
-                            <span class="text-uppercase text-muted mb-3 ">JAVASCRIPT 90%</span>
-                            <div class="progress mt-2 rounded-0" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 90%"></div>
-                            </div>
-                    </div>   
+                    </div>
+                    
+                    <!-- Skills Section with Progress Bars -->
+                    <div class="details_about mt-4">
+                        <p class="text-capitalize fw-bolder fs-5 mb-3">Skills</p>
+    
+                        <span class="text-uppercase text-muted">HTML 85%</span>
+                        <div class="progress mt-2 rounded-0 mb-3" role="progressbar" aria-label="HTML skill level" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                        
+                        <span class="text-uppercase text-muted">CSS3 75%</span>
+                        <div class="progress mt-2 rounded-0 mb-3" role="progressbar" aria-label="CSS skill level" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                        
+                        <span class="text-uppercase text-muted">PHP 50%</span>
+                        <div class="progress mt-2 rounded-0 mb-3" role="progressbar" aria-label="PHP skill level" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 50%"></div>
+                        </div>
+                        
+                        <span class="text-uppercase text-muted">JavaScript 90%</span>
+                        <div class="progress mt-2 rounded-0" role="progressbar" aria-label="JavaScript skill level" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-5 offset-1">
-                    <h3 class=" contact-h  fs-1 fw-bolder mb-5">About me</h3>
+                
+                <!-- Second Column for About Me Text -->
+                <div class="col-12 col-md-5 offset-md-1">
+                    <h3 class="contact-h fs-1 fw-bolder mb-5">About me</h3>
                     <p class="lead mt-4">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p>
                     <p class="lead mt-4">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.</p>
-                    <p class="lead mt-4">Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+                    <p class="lead mt-4 mb-0">Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
                 </div>
             </div>
         </div>  
@@ -238,7 +246,7 @@
             <div class="row  gy-5">
                 <h3 class="text-uppercase  pt-4 text-center fs-1 fw-bolder">Portfolio</h3>
                 <p class=" par-head-service text-center m-0 pb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <div class="card" >
                         <div class="inner">
                             <img src="./images/protofolio/work-1.jpg" class="card-img-top w-100 d-block img_card" alt="...">
@@ -256,7 +264,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <div class="card" >
                         <div class="inner">
                             <img src="./images/protofolio/work-2.jpg" class="card-img-top w-100 d-block img_card" alt="...">
@@ -274,7 +282,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <div class="card" >
                         <div class="inner">
                             <img src="./images/protofolio/work-3.jpg" class="card-img-top w-100 d-block img_card" alt="...">
@@ -293,7 +301,7 @@
                 </div>
 
 
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <div class="card" >
                         <div class="inner">
                             <img src="./images/protofolio/work-4.jpg" class="card-img-top w-100 d-block img_card" alt="...">
@@ -311,7 +319,7 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <div class="card" >
                         <div class="inner">
                             <img src="./images/protofolio/work-5.jpg" class="card-img-top w-100 d-block img_card" alt="...">
@@ -328,7 +336,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <div class="card" >
                         <div class="inner">
                             <img src="./images/protofolio/work-6.jpg" class="card-img-top w-100 d-block img_card" alt="...">
